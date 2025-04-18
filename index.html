@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glowing Card Effect</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./ico/arrows-border.ico" type="image/x-icon">
+</head>
+
+<body>
+  <button class="arrow left" onclick="toggleGlow(-1)">&#8592;</button>
+
+  <div class="glow-card" id="glowCard">
+    <div class="card">
+      <div class="content">
+        <p class="text">Glowing Card Effect</p>
+        <p class="text-mini">
+          Olá, clique nas setas ao lado para alterar a borda do card.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <button class="arrow right" onclick="toggleGlow(1)">&#8594;</button>
+
+  <script>
+    const glowCard = document.getElementById('glowCard');
+    const classes = ['golden', 'rainbow', 'splat'];
+    let current = 0;
+
+    function toggleGlow(direction) {
+      glowCard.classList.remove(classes[current]);
+      current = (current + direction + classes.length) % classes.length;
+      glowCard.classList.add(classes[current]);
+    }
+  </script>
+</body>
+</html>

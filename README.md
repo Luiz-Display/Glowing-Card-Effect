@@ -1,10 +1,15 @@
 # Glowing Card Effect
 
 
-Card com bordas animadas e com cores vibrantes, possuindo três opções: dourado, colorido e verde com rosa. (API da Google para as fontes)
+Card com bordas animadas e com cores vibrantes, possuindo três opções: dourado, colorido e verde com rosa. 
 
-Card with animated borders and vibrant colors, featuring three options: gold, multicolor, and green with pink. (Google API for the fonts)
+Card with animated borders and vibrant colors, featuring three options: gold, multicolor, and green with pink. 
 
 | <div align="center">Preview</div> |
 |:--:|
 | <img src="./preview/gif-glowing-card-effect.gif" alt="Preview Desktop" width="800"/> |
+
+
+**(Uso da API da Google para as fontes)**
+
+**(Use of Google API for the fonts)**
